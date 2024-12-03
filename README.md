@@ -83,11 +83,11 @@ The provided code demonstrates how to create a hand gesture recognition system. 
 - Press 'Q' to exit the webcam view.
 
 ## Requirements
-- TensorFlow
-- Mediapipe
-- OpenCV
+- TensorFlow :https://www.geeksforgeeks.org/introduction-to-tensorflow/
+- Mediapipe:https://blog.roboflow.com/what-is-mediapipe/
+- OpenCV:https://www.geeksforgeeks.org/opencv-python-tutorial/
 - NumPy
-- Scikit-learn
+- Scikit-learn:https://www.geeksforgeeks.org/learning-model-building-scikit-learn-python-machine-learning-library/
 
 ## Installation
 1. Clone the repository.
