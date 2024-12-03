@@ -83,6 +83,7 @@ The provided code demonstrates how to create a hand gesture recognition system. 
 - Press 'Q' to exit the webcam view.
 
 ## Requirements
+- Install Pycharm Editor:https://pycharm-community-edition.en.softonic.com/
 - TensorFlow :https://www.geeksforgeeks.org/introduction-to-tensorflow/
 - Mediapipe:https://blog.roboflow.com/what-is-mediapipe/
 - OpenCV:https://www.geeksforgeeks.org/opencv-python-tutorial/

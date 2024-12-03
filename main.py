@@ -9,7 +9,7 @@ import mediapipe as mp
 mp_hands = mp.solutions.hands
 mp_drawing = mp.solutions.drawing_utils
 # Define folder path for dataset
-EXTRACTED_FOLDER = r"D:\New folder\pythonHand\leapgestrecog"
+EXTRACTED_FOLDER = r"D:\New folder\pythonHand\leapgestrecog" # this folder or path for dataset can ypu change base path for pc
 print(f"Dataset Directory: {EXTRACTED_FOLDER}")
 # Dynamically get gesture names from folder names in the dataset directory
 gesture_names = sorted([d for d in os.listdir(EXTRACTED_FOLDER) if os.path.isdir(os.path.join(EXTRACTED_FOLDER, d))])
@@ -86,7 +86,7 @@ def build_cnn_model(input_shape=(64, 64, 1), num_classes=len(gesture_names)):
 model = build_cnn_model()
 model.summary()
 # Train the model
-history = model.fit(X_train, y_train, epochs=14, batch_size=32,
+history = model.fit(X_train, y_train, epochs=5, batch_size=32,
                     validation_data=(X_val, y_val))  # Increased epochs for better learning
 # Evaluate the model on the test data
 test_loss, test_accuracy = model.evaluate(X_test, y_test)
