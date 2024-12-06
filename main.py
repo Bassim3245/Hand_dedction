@@ -2,7 +2,7 @@
 import os
 import cv2
 import numpy as np
-from tensorflow.keras import layers, models
+from tensorflow.keras import layers, models #build cnn
 from sklearn.model_selection import train_test_split
 import mediapipe as mp
 # Initialize Mediapipe Hand module for hand detection and tracking
@@ -85,6 +85,7 @@ def build_cnn_model(input_shape=(64, 64, 1), num_classes=len(gesture_names)):
 # Build and summarize the model
 model = build_cnn_model()
 model.summary()
+print(model.summary)
 # Train the model
 history = model.fit(X_train, y_train, epochs=5, batch_size=32,
                     validation_data=(X_val, y_val))  # Increased epochs for better learning
